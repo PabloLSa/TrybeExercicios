@@ -1,1 +1,1 @@
-# TrybeExerc-cios
+# TrybeExercicios
