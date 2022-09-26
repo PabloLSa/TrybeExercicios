@@ -9,8 +9,10 @@ console.log("A média é " + resultado)
 // Com base no código que acabou de gerar, faça com que, caso o valor final seja mairo que 20 imprima  a mensagem/;
 //valor maior que 20. Caso não seja, imprima valor menor ou igual a 20
 if(resultado>20){
- console.log("Valor da média é mairo que 20");
+ console.log("Valor da média é maior que 20");
 } else{
-    console.log('VAlor menor ou i=gual a 20h');
+    console.log('Valor menor ou igual a 20');
 }
+//impressao do maior e menor valor do array nummbers 
+
 
