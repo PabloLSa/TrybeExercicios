@@ -8,57 +8,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="form-header">
-<h1 style="text-align :center" >TrybeTrip</h1>
+    <header style="text-align :center" id="form-header">
+<h1>TrybeTrip</h1>
     </header>
+    <br>
    
     <form style="text-align :center" action="" method="get" id="myform" class="formName">
-        <fieldset>
+        <fieldset class="branca">
        
-            <section>
+            <section id="nomeCompleto"> 
         <label for="name">Nome:</label>
-        <input minlength="10" maxlength="50" type="text" name="nome" id="name" required>
+        <input placeholder="Escreva seu nome" minlength="10" maxlength="40" type="text" name="nome" id="name" value="" required>
     </section>
     <br>
 
-            <section>
+            <section id="e-mail">
 
-                <label for="email">Email:</label>
-                <input minlength="20" maxlength="50" type="email" name="email" id="e-mail" required>
+                <label for="e-mail">Email:</label>
+                <input placeholder="Escreva seu e-mail" minlength="10" maxlength="50" type="email" name="email" id="e-mails" required>
 
             </section>
 
-            <section>
+            <br>
+
+            <section id="locais">
                 <h2 style="text-align :center" >
                 Destino Preferido :    
                 </h2>
 
-                <input type="radio" name="cidade" id="city1">
-                <label for="city1">Cidade</label>
+                <input type="radio" name= "local" id="local1">
+                <label for="local1">Cidade</label>
 
-                <input type="radio" name="cidade" id="city2">
-                <label for="city2">Campo</label>
+                <input type="radio" name= "local"id="local2">
+                <label for="local2">Campo</label>
 
-                <input type="radio" name="cidade" id="city3">
-                <label for="city3">Praia</label>
+                <input type="radio" name="local" id="local3">
+                <label for="local3">Praia</label>
 
-                <input type="radio" name="cidade" id="city4">
-                <label for="city4">Montanha</label>
+                <input type="radio" name="local" id="local4">
+                <label for="local4">Montanha</label>
 
             </section>
-  
-            <section>
-                <h3>
-                    Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
-                </h3>
 
-                <textarea name="" id="" cols="30" rows="10" maxlength="500" placeholder="Escreva sua resposta em até 500 caracteres "></textarea>
+            <br>
+
+                <textarea itemid="textarea" name="" id="por que" cols="30" rows="10" maxlength="500" placeholder="Escreva sua resposta em até 500 caracteres "></textarea>
             </section>
+            <br>
+        
             <section>
+
+                <br>
 
                 <h4>Qual a melhor data para você realizar a sua viagem?</h4>
 
-                <input type="date" name="" id="">
+                <input required type="date" name="" id="date">
 
             </section>
                 <br>
@@ -75,8 +79,11 @@
 
                     <br>
         </fieldset>   
-            <button type="submit"> Enviar os dados</button>
-            <button type="reset">Apagar</button>
+
+             <label for="botao1"> Clique aqui para participar do concurso</label>
+            <button id="botao1" type="submit"> Particpar do concurso Trybe!!</button>
+
+            <button id="botao2" type="reset">Apagar</button>
 
 
         </form>
