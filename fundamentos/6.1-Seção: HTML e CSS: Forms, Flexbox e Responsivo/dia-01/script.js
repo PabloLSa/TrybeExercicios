@@ -1,38 +1,35 @@
 
-
-function textInputValidation() {
-    const email = document.getElementById("e-mails" ).value.length;
-    const invalidEmail = email < 10 || email > 50;
-  
-    const name = document.getElementById("name" ).value.length;
-    const invalidName = name < 10 || name > 40;
-  
-    const reason = document.getElementById("por que" ).value.length;
-    const invalidReason = reason > 500;
-  
-    if (invalidEmail || invalidName || invalidReason) {
-      return false;
-    }
-    else {
-      return true;
-    }
-  }
+const participarConcursoTrybe = document.getElementById('botao1');
+const checkbox = document.getElementById('ofertas1');
+participarConcursoTrybe.disabled = true;
 
 
-function handleSubmit(event) {
-    event.preventDefault();
-    const validation = textInputValidation();
-    if (validation === false) {
-      alert('Dados inválidos');
-    } else {
-      alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
-    }
-  }
-  
+    checkbox.addEventListener('click', ()=> {
+      participarConcursoTrybe.disabled = false;
+         }
+       
+      )
+      participarConcursoTrybe.addEventListener('click', verify);
 
+      function verify() {
 
-
-
-
+        const nameSize = document.getElementById('name').value.length;
+        const emailSize = document.getElementById('e-mails').value.length;
+        const textAraSize = document.getElementById('por que').value.length;
     
+               if(nameSize<10 || nameSize>40 || emailSize<10 || emailSize>50 || textAraSize>500){
+          alert ('Dados inválidos')
+          
+                } 
+                else{
+                  alert('Dados enviados com sucesso!! Obrigado por participar do concurso TrybeTrip');
+                }
+    
+    
+      }
+  
+      
+
+
+
   
