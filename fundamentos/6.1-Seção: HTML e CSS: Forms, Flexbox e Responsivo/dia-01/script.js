@@ -1,9 +1,11 @@
 
 const participarConcursoTrybe = document.getElementById('botao1');
 const checkbox = document.getElementById('ofertas1');
+const getForms = document.getElementById('myform');
+
 participarConcursoTrybe.disabled = true;
 
-
+function sendInformation(){
     checkbox.addEventListener('click', ()=> {
       participarConcursoTrybe.disabled = false;
          }
@@ -22,14 +24,20 @@ participarConcursoTrybe.disabled = true;
           
                 } 
                 else{
-                  alert('Dados enviados com sucesso!! Obrigado por participar do concurso TrybeTrip');
+                  getForms.innerHTML = '';
+                  getForms.style.textAlign = 'center';
+                  getForms.style.fontSize = '30px';
+                  getForms.innerText = 'Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.';
+
                 }
     
     
       }
+
   
       
-
+    }
+    sendInformation();
 
 
   
