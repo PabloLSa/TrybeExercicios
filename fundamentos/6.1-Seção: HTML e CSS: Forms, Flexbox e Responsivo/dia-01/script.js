@@ -34,7 +34,6 @@ function sendInformation(){
       }
 
   
-      
     }
     sendInformation();
 
