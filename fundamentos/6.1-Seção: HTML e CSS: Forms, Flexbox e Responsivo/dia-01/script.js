@@ -19,7 +19,7 @@ function sendInformation(){
         const emailSize = document.getElementById('e-mails').value.length;
         const textAraSize = document.getElementById('por que').value.length;
     
-               if(nameSize<10 || nameSize>40 || emailSize<10 || emailSize>50 || textAraSize>500){
+               if(nameSize<10 || nameSize>40 || emailSize<10 || emailSize>50 ||textAraSize<30 || textAraSize>500){
           alert ('Dados inválidos')
           
                 } 
