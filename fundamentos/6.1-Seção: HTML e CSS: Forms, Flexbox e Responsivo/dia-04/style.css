@@ -35,7 +35,7 @@
     align-self: center;
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    flex-basis: 100%;
   }
   
   .menu-container li {
@@ -64,6 +64,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-basis:700px ;
   }
   
   .card-container div {
@@ -74,13 +75,17 @@
     height: 150px;
     justify-content: center;
     margin: 10px;
-  }
+    flex-basis: 16%;
+      }
   
   .aside-container {
     display: flex;
+    flex-basis: 350px;
     flex-direction: column;
     margin: 20px;
     flex-basis: 350px;
+    flex-grow: 1;
+    align-self: center;
   }
   
   .aside-container h3, h4 {
