@@ -65,6 +65,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     flex-basis:700px ;
+    flex-grow: 1;
   }
   
   .card-container div {
@@ -76,6 +77,8 @@
     justify-content: center;
     margin: 10px;
     flex-basis: 16%;
+    flex-grow: 1;
+    
       }
   
   .aside-container {
